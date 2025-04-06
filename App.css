@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Open Sans', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 25px 100px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.main_logo {
+    height: 60px;
+    width: auto;
+}
+
+.search-container {
+    margin: 0 32px;
+    width: 280px;
+}
+
+.search-input-text {
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+.search-input-text::placeholder {
+    color: #999999;
+}
+
+.add-button {
+    padding: 6px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.visitors-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#visitors-info-title {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4E3000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 4px;
+}
+
+#visitors-info-count {
+    color: #F44336;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#visitors-info-online {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.visitors-info {
+    margin: 0 2px;
+}
+
+.main-container {
+    flex: 1;
+    background: #FFFFFF;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main-container-header,
+.main-container-info-person {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4E3000;
+    font-weight: 600;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    padding: 16px 40px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-container-info-person:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.main-container-info-person-header,
+.main-container-info-person-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-container-info-person-header h5,
+.main-container-info-person-data span {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.main-container-info-person-header h5 {
+    color: #4E3000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.main-container-info-person-data span {
+    color: #000000;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    min-height: 24px;
+}
+
+#main-container-info-person-header-number,
+.main-container-info-person-number {
+    width: 60px;
+    margin-right: 40px;
+}
+
+#main-container-info-person-header-name,
+.main-container-info-person-name {
+    width: 260px;
+    margin-right: 40px;
+}
+
+#main-container-info-person-header-company,
+.main-container-info-person-company {
+    width: 260px;
+    margin-right: 40px;
+}
+
+#main-container-info-person-header-group,
+.main-container-info-person-group {
+    width: 160px;
+    margin-right: 40px;
+}
+
+.main-container-info-person-header-online,
+.main-container-info-person-online {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+.main-container-info-person-online {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presence-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+
+.main-container-info-person {
+    display: flex;
+    padding: 10px 40px;
+    width: 100%;
+}
+
+.main-container-header {
+    display: flex;
+    padding: 10px 40px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.presence-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.status-indicator.online {
+    background-color: #28a745;
+}
+
+.status-indicator.offline {
+    background-color: #dc3545;
+}
+
+.presence-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.presence-indicator.present {
+    background-color: #4CAF50;
+}
+
+.presence-indicator.absent {
+    background-color: #F44336;
+}
+
+footer {
+    background: #FFFFFF;
+    padding: 16px 40px;
+    margin-top: auto;
+    margin-left: 5%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content h4 {
+    color: #4E3000;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.footer-content h5 {
+    color: #4E3000;
+    font-size: 15px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-button {
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    color: #333333;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    transition: background-color 0.2s;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.context-menu {
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 4px 0;
+    min-width: 160px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.context-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    color: #333333;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.context-menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+} 

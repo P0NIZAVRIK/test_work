@@ -1,0 +1,137 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.modal-form-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-label {
+  font-size: 14px;
+  color: #4E3000;
+  margin: 0;
+  width: 120px;
+}
+
+.modal-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4E3000;
+  background: white;
+}
+
+.modal-select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4E3000;
+  background: white;
+}
+
+.modal-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #5CB85C;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.modal-button {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.modal-button-add {
+  background-color: #5CB85C;
+  color: white;
+}
+
+.modal-button-close {
+  background-color: #868E96;
+  color: white;
+}
+
+.modal-button-add:hover {
+  background-color: #4CAF50;
+}
+
+.modal-button-close:hover {
+  background-color: #737373;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-close-button-x {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+} 
